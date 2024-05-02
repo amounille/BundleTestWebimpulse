@@ -1,0 +1,37 @@
+{
+    "name": "webimpulse/bundle-site",
+    "description": "Bundle pour la création de site simplifier",
+    "type": "symfony-bundle",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.1",
+        "symfony/maker-bundle": "^1.51",
+        "symfony/runtime": "7.0.*",
+        "symfony/yaml": "7.0.*",
+        "doctrine/dbal": "^3.7",
+        "doctrine/annotations": "^2.0",
+        "doctrine/lexer": "^3",
+        "doctrine/orm": "^3.1",
+        "symfony/translation": "7.0.*",
+        "doctrine/doctrine-bundle": "^2.12",
+        "easycorp/easyadmin-bundle": "^4.6",
+        "stof/doctrine-extensions-bundle": "^1.8",
+        "liip/imagine-bundle": "^2.11",
+        "vich/uploader-bundle": "^2.1",
+        "friendsofsymfony/ckeditor-bundle": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebImpulse\\SiteBundle\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "WebImpulse\\SiteBundle\\Tests\\": "tests/" }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": false,
+            "symfony/runtime": false
+        }
+    }
+}
